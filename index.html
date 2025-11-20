@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div id="game">
+    <h2>Eating Game</h2>
+    <div id="controls">
+      <button id="btn-🍎">🍎</button>
+      <button id="btn-🍌">🍌</button>
+      <button id="btn-🍕">🍕</button>
+      <button id="btn-🍪">🍪</button>
+    </div>
+
+    <div>Score: <span id="score">0</span></div>
+
+    <div id="playfield">
+      <div id="player">🙂</div>
+    </div>
+
+    <div id="messages">Press Space to eat</div>
+  </div>
+
+  <script src="../javascript/game.js"></script>
+</body>
+</html>
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eating Game</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div id="game">
+    <header>
+      <h1>Eating Game</h1>
+      <div id="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Lives: <span id="lives">3</span></div>
+        <div>Level: <span id="level">1</span></div>
+      </div>
+    </header>
+
+    <div id="playfield" tabindex="0">
+      <div id="player" aria-label="player">🍽️</div>
+    </div>
+
+    <footer>
+      <div id="messages">Use ← → to move. Space to pause.</div>
+    </footer>
+  </div>
+
+  <script src="../javascript/game.js"></script>
+</body>
+</html>
